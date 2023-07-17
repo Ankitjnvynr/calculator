@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body id="bb">
+    
+    <div id="myDIV"  class="calculator">
+        <div class="toogle">
+            <label class="switch" >
+                <input id="chk" type="checkbox" onclick="myFunction()">
+                <span  class="slider round"></span>
+            </label>
+        </div>
+        <input type="text" id="result" rea>
+        <div class="btn-area">
+            <button class="button spa-i" onclick="clearResult()">C</button>
+            <button class="button" onclick="deleteLastCharacter()">&larr;</button>
+            <button class="button" onclick="appendCharacter('/')">/</button>
+            <button class="button" onclick="appendCharacter('7')">7</button>
+            <button class="button" onclick="appendCharacter('8')">8</button>
+            <button class="button" onclick="appendCharacter('9')">9</button>
+            <button class="button" onclick="appendCharacter('*')">*</button>
+            <button class="button" onclick="appendCharacter('4')">4</button>
+            <button class="button" onclick="appendCharacter('5')">5</button>
+            <button class="button" onclick="appendCharacter('6')">6</button>
+            <button class="button" onclick="appendCharacter('-')">-</button>
+            <button class="button" onclick="appendCharacter('1')">1</button>
+            <button class="button" onclick="appendCharacter('2')">2</button>
+            <button class="button" onclick="appendCharacter('3')">3</button>
+            <button class="button" onclick="appendCharacter('+')">+</button>
+            <button class="button" onclick="appendCharacter('0')">0</button>
+            <button class="button" onclick="appendCharacter('.')">.</button>
+            <button class="button spa-j" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
